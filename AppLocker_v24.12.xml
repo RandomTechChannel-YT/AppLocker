@@ -1,0 +1,436 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="Enabled">
+    <FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+  <RuleCollection Type="Dll" EnforcementMode="AuditOnly" />
+  <RuleCollection Type="Exe" EnforcementMode="Enabled">
+    <FilePublisherRule Id="027415d8-88bf-4af7-aaac-c4968cab25be" Name="Signed by O=UBISOFT ENTERTAINMENT SWEDEN AB, L=MALMO, S=SKÅNE, C=SE" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=UBISOFT ENTERTAINMENT SWEDEN AB, L=MALMO, S=SKÅNE, C=SE" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="08e9d46a-c57a-4dd8-8b73-c274add8c220" Name="Signed by O=ELECTRONIC ARTS, INC., L=REDWOOD CITY, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=ELECTRONIC ARTS, INC., L=REDWOOD CITY, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="0e639b46-4e34-462d-8267-719c790e7f78" Name="Signed by O=NVIDIA CORPORATION, L=SANTA CLARA, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=NVIDIA CORPORATION, L=SANTA CLARA, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="1d7f2864-bc88-4b87-823e-bfc2efe6398f" Name="Signed by O=DISCORD INC., L=SAN FRANCISCO, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=DISCORD INC., L=SAN FRANCISCO, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="2b0f50ac-1365-401c-92ad-44ac9f8104cb" Name="ADDINUTIL.EXE, in MICROSOFT® .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINUTIL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="32cc6f4d-c649-4127-8e9e-7890e332479d" Name="POWERSHELL.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="Allow from default directories" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="POWERSHELL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%SYSTEM32%\WindowsPowerShell\*" />
+        <FilePathCondition Path="%WINDIR%\WinSxS\*" />
+      </Exceptions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="33b7632c-a2a2-4d00-b91d-cf6efd31dd6f" Name="Signed by O=LG ELECTRONICS INC., L=YEONGDEUNGPO-GU, S=SEOUL, C=KR" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=LG ELECTRONICS INC., L=YEONGDEUNGPO-GU, S=SEOUL, C=KR" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="365cc981-666a-47c4-9dad-bc288d02dc7b" Name="Signed by O=INTEL CORPORATION, L=SANTA CLARA, S=CA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=INTEL CORPORATION, L=SANTA CLARA, S=CA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="3bef953e-9024-469e-8d3c-7ba4e34f69f6" Name="PRESENTATIONHOST.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="PRESENTATIONHOST.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="3d8f9323-895b-4968-b137-b49d7ae9ff1c" Name="EXPLORER.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-5-18" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="EXPLORER.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="4bde59db-70fe-4b54-abf2-0df2baf20339" Name="CMSTP.EXE, in MICROSOFT(R) CONNECTION MANAGER, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT(R) CONNECTION MANAGER" BinaryName="CMSTP.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="5cbcc29e-0327-43b7-8fb9-4e8ae8c0b02e" Name="Signed by O=BATTLEYE INNOVATIONS E.K., L=REUTLINGEN, S=BADEN-WÜRTTEMBERG, C=DE" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=BATTLEYE INNOVATIONS E.K., L=REUTLINGEN, S=BADEN-WÜRTTEMBERG, C=DE" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="5d2cb4bb-7950-4ed5-a048-cff40b50f929" Name="INFDEFAULTINSTALL.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="INFDEFAULTINSTALL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="605ad308-890e-4617-befb-c18cdb3d35b8" Name="CMSTP.EXE, in MICROSOFT(R) CONNECTION MANAGER, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT(R) CONNECTION MANAGER" BinaryName="CMSTP.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="63e099bf-de08-4d6b-944f-b89dc8416bb1" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="6926e084-c881-45be-a5b7-d2b04004cdd1" Name="Signed by O=EASYANTICHEAT OY, L=HELSINKI, S=UUSIMAA, C=FI" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=EASYANTICHEAT OY, L=HELSINKI, S=UUSIMAA, C=FI" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="6c8269d3-93c9-48a1-b9b0-27134b28f5f4" Name="Signed by O=BLIZZARD ENTERTAINMENT, INC., L=IRVINE, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=BLIZZARD ENTERTAINMENT, INC., L=IRVINE, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="74cf0007-c827-4e7c-83b2-84d2aaac1d5d" Name="Signed by O=LOGITECH INC, L=NEWARK, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=LOGITECH INC, L=NEWARK, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="85cdd6e9-70e2-49f1-8b52-49914ff9ac1a" Name="Signed by O=EPIC GAMES INC., L=CARY, S=NORTH CAROLINA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=EPIC GAMES INC., L=CARY, S=NORTH CAROLINA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="8bcfc677-41f4-4639-84e8-d03f3e8b3af5" Name="MSBUILD.EXE, in MICROSOFT® .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="MSBUILD.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="92ef9e6e-f089-46c1-9558-22d30ec55fd2" Name="Signed by O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="972bace5-a1e7-4b06-abc6-50ab32957c9f" Name="POWERSHELL_ISE.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="POWERSHELL_ISE.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%SYSTEM32%\WindowsPowerShell\*" />
+        <FilePathCondition Path="%WINDIR%\WinSxS\*" />
+      </Exceptions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="9a53f839-6f0a-4642-bfea-2b9c828cb911" Name="Signed by O=ASUSTEK COMPUTER INC., L=TAIPEI CITY, C=TW" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=ASUSTEK COMPUTER INC., L=TAIPEI CITY, C=TW" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="a51af569-4d8b-478f-a358-90afd260fcb7" Name="ASPNET_COMPILER.EXE, in MICROSOFT® .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ASPNET_COMPILER.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="a929cf2d-20da-47f8-9e9f-8e9923c855df" Name="PWSH.DLL, in POWERSHELL, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="Block PowerShell 7 outside default directory" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="POWERSHELL" BinaryName="PWSH.DLL">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%PROGRAMFILES%\PowerShell\7\*" />
+        <FilePathCondition Path="%ProgramFiles(x86)%\PowerShell\7\*" />
+      </Exceptions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="afa26f86-3624-436c-ad1e-0b99bd1c528a" Name="Signed by O=SONY INTERACTIVE ENTERTAINMENT INC., L=MINATO-KU, S=TOKYO, C=JP" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=SONY INTERACTIVE ENTERTAINMENT INC., L=MINATO-KU, S=TOKYO, C=JP" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="b53bb99c-7256-4d5b-ae61-0226584ff010" Name="Signed by O=VALVE, L=BELLEVUE, S=WA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=VALVE, L=BELLEVUE, S=WA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="c7e08958-98f5-4f9b-8f6e-c8d9252866d6" Name="MSDT.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="MSDT.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="cc7fd91a-64da-45eb-812f-ee217ed753c2" Name="Signed by O=MICRO-STAR INTERNATIONAL CO., LTD., L=NEW TAIPEI, S=NEW TAIPEI, C=TW" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICRO-STAR INTERNATIONAL CO., LTD., L=NEW TAIPEI, S=NEW TAIPEI, C=TW" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="d5b58006-5b50-4679-a23b-cbd29a6ba3cb" Name="MSHTA.EXE, in INTERNET EXPLORER, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="INTERNET EXPLORER" BinaryName="MSHTA.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="d895a259-87b9-408c-a045-c7f71e082143" Name="MICROSOFT.WORKFLOW.COMPILER.EXE, in MICROSOFT® .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="MICROSOFT.WORKFLOW.COMPILER.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="da0d3d41-4eb0-4c01-b0be-73fe032df740" Name="Signed by O=ASUSTEK COMPUTER INC., L=BEITOU DISTRICT, S=TAIPEI CITY, C=TW" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=ASUSTEK COMPUTER INC., L=BEITOU DISTRICT, S=TAIPEI CITY, C=TW" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="dd29f26b-cb29-46d1-8a9b-f4b4d4413f85" Name="TASKMGR.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-5-18" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="TASKMGR.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="fa5052ea-8c4a-41de-8f50-1596b72f3f25" Name="ADDINPROCESS32.EXE, in MICROSOFT® .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINPROCESS32.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="fb6ab911-92bc-453a-8a6e-9908120d9d03" Name="Signed by O=ADVANCED MICRO DEVICES INC., L=SANTA CLARA, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=ADVANCED MICRO DEVICES INC., L=SANTA CLARA, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="fcf53c74-c21a-4025-a03b-5acb78efa8b4" Name="Signed by O=MOZILLA CORPORATION, L=MOUNTAIN VIEW, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MOZILLA CORPORATION, L=MOUNTAIN VIEW, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="fd33a102-603f-4ac1-ab81-163b7d345c92" Name="Signed by O=UBISOFT ENTERTAINMENT INC., L=MONTREAL, S=QUEBEC, C=CA" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=UBISOFT ENTERTAINMENT INC., L=MONTREAL, S=QUEBEC, C=CA" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="05bb3392-fa34-42b5-8066-946cf70219e6" Name="C:\Program Files (x86)\*" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="C:\Program Files (x86)\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="C:\Program Files (x86)\WindowsPowerShell\*" />
+      </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="3d6394bd-60b2-48f5-8523-24e74db9815b" Name="%WINDIR%\System32\Applocker\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\System32\Applocker\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="519fb2c0-4ecd-43cc-b9a5-d06be087b747" Name="%SYSTEM32%\cipher.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\cipher.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="626c9ee6-6d68-4632-afde-e9731f2f64dc" Name="All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsPowerShell\*" />
+      </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="a02c8cf5-7de3-4097-a1d6-e9c58652854c" Name="Block *.com files" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.com" />
+      </Conditions>
+      <Exceptions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="c2136cd9-319b-4345-8fd1-fde3ae2a63e0" Name="Block ScreenSaver.scr files" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.scr" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d1d2a9d8-5d79-4edf-a24a-b134d8005081" Name="%WINDIR%\System32\Applocker:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\System32\Applocker:*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e21618dd-f1f8-45d9-ab24-5d58d864de84" Name="All files located in the Windows folder" Description="Allows members of the Everyone group to run applications that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%SYSTEM32%\WindowsPowerShell\*" />
+        <FilePathCondition Path="%WINDIR%\Registration\CRMLog:*" />
+        <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
+        <FilePathCondition Path="%WINDIR%\SYSTEM32\AppLocker:*" />
+        <FilePathCondition Path="%WINDIR%\SYSTEM32\AppLocker\*" />
+        <FilePathCondition Path="%WINDIR%\Temp\*" />
+        <FilePathCondition Path="%WINDIR%\tracing:*" />
+        <FilePathCondition Path="%WINDIR%\tracing\*" />
+        <FilePathCondition Path="C:\Windows\debug\WIA:*" />
+        <FilePathCondition Path="C:\Windows\debug\WIA\*" />
+        <FilePathCondition Path="C:\Windows\Registration\CRMLog\*" />
+        <FilePathCondition Path="C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Dlna\DeviceIcons:*" />
+        <FilePathCondition Path="C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Dlna\DeviceIcons\*" />
+        <FilePathCondition Path="C:\Windows\ServiceState\HidOverGatt\Data:*" />
+        <FilePathCondition Path="C:\Windows\ServiceState\HidOverGatt\Data\*" />
+        <FilePathCondition Path="C:\Windows\System32\Com\dmp\*" />
+        <FilePathCondition Path="C:\Windows\System32\drivers\DriverData:*" />
+        <FilePathCondition Path="C:\Windows\System32\drivers\DriverData\*" />
+        <FilePathCondition Path="C:\Windows\System32\FxsTmp\*" />
+        <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys:*" />
+        <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys\*" />
+        <FilePathCondition Path="C:\Windows\System32\spool\drivers\color\*" />
+        <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS\*" />
+        <FilePathCondition Path="C:\Windows\System32\spool\SERVERS\*" />
+        <FilePathCondition Path="C:\Windows\System32\Tasks\*" />
+        <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated\*" />
+        <FilePathCondition Path="C:\Windows\SysWOW64\Com\dmp\*" />
+        <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp\*" />
+        <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\*" />
+        <FilePathCondition Path="C:\Windows\SysWOW64\WindowsPowerShell\*" />
+      </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="Enabled">
+    <FilePublisherRule Id="0c373117-0888-4891-b694-29fd9a8514fd" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="8530b826-be03-4ec6-aca5-b4a199498eb9" Name="Signed by O=EPIC GAMES INC., L=CARY, S=NORTH CAROLINA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=EPIC GAMES INC., L=CARY, S=NORTH CAROLINA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="ddeaf06b-a336-4732-89b0-aa59f8630ae4" Name="Signed by O=CD PROJEKT S.A., L=WARSZAWA, S=MAZOWIECKIE, C=PL" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=CD PROJEKT S.A., L=WARSZAWA, S=MAZOWIECKIE, C=PL" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="5b290184-345a-4453-b184-45305f6d9a54" Name="(Default Rule) All Windows Installer files in %systemdrive%\Windows\Installer" Description="Allows members of the Everyone group to run all Windows Installer files located in %systemdrive%\Windows\Installer." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Installer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="64ad46ff-0d71-4fa0-a30b-3f3d30c5433d" Name="(Default Rule) All Windows Installer files" Description="Allows members of the local Administrators group to run all Windows Installer files." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+    </RuleCollection>
+  <RuleCollection Type="Script" EnforcementMode="Enabled">
+    <FilePathRule Id="06dce67b-934c-454f-a263-2515c8796a5d" Name="(Default Rule) All scripts located in the Program Files folder" Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="89021eb6-886e-426e-8a55-80ed1db68faf" Name="All scripts" Description="Allows members of the local Administrators group to run all scripts." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b2452e77-8c0c-47b4-9f24-e134217ff067" Name="All scripts located in the Windows folder" Description="Allows members of the Everyone group to run scripts that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
+        <FilePathCondition Path="%SYSTEM32%\FxsTmp\*" />
+        <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
+        <FilePathCondition Path="%SYSTEM32%\spool\drivers\color\*" />
+        <FilePathCondition Path="%SYSTEM32%\spool\PRINTERS\*" />
+        <FilePathCondition Path="%SYSTEM32%\spool\SERVERS\*" />
+        <FilePathCondition Path="%SYSTEM32%\Tasks\*" />
+        <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
+        <FilePathCondition Path="%WINDIR%\Tasks\*" />
+        <FilePathCondition Path="%WINDIR%\Temp\*" />
+        <FilePathCondition Path="%WINDIR%\tracing\*" />
+      </Exceptions>
+    </FilePathRule>
+  </RuleCollection>
+</AppLockerPolicy>
